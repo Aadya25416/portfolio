@@ -129,9 +129,9 @@ export default function HeroSection() {
               href={PROFILE.contacts.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-1.5 hover:text-[#F7F4F0] transition-colors"
+              className="flex items-center gap-1.5 hover:text-white transition-colors group"
             >
-              <LinkedinIcon className="w-3.5 h-3.5" />
+              <LinkedinIcon className="w-3.5 h-3.5 text-[#0A66C2] group-hover:scale-110 transition-transform" />
               <span>LinkedIn</span>
             </a>
             <span className="text-white/20">•</span>
