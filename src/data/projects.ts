@@ -18,8 +18,8 @@ export const PROJECTS: Project[] = [
     title: "RouteX",
     subtitle: "Smart Logistics & Accessibility Intelligence Platform",
     description:
-      "A geospatial logistics platform designed to improve road-network visibility and support accessibility planning in challenging terrain.",
-    role: "Frontend development and integration of geographic road-network data with the backend.",
+      "Contributed to a geospatial logistics platform by integrating backend APIs for geographic road-network data, handling GeoJSON data for map visualization, and supporting the delivery of structured geospatial information for route accessibility and logistics planning.",
+    role: "Backend Developer — Geospatial Systems & API Integration",
     technologies: ["Next.js", "TypeScript", "MapLibre GL JS", "OpenStreetMap", "Tailwind CSS"],
     features: [
       "Interactive map visualization for high-altitude & complex road networks",
