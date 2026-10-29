@@ -125,20 +125,6 @@ export default function ContactSection() {
             <span>Say Hello Directly ↗</span>
           </a>
         </div>
-
-        {/* Footer info */}
-        <div className="mt-20 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between text-xs font-mono text-[#A5A2AC] gap-4">
-          <div>
-            © 2026 Aadya Agrawal. Designed & Engineered with precision.
-          </div>
-          <div className="flex items-center gap-4">
-            <span>IIIT Lucknow</span>
-            <span>•</span>
-            <span>Next.js & TypeScript</span>
-            <span>•</span>
-            <span className="text-[#10B981]">● Status: Active</span>
-          </div>
-        </div>
       </div>
     </section>
   );

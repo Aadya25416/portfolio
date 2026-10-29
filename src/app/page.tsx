@@ -5,6 +5,7 @@ import SkillsSection from "@/components/sections/SkillsSection";
 import AchievementsSection from "@/components/sections/AchievementsSection";
 import OpenSourceSection from "@/components/sections/OpenSourceSection";
 import ContactSection from "@/components/sections/ContactSection";
+import Footer from "@/components/navigation/Footer";
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
 
       {/* 4.7 Contact Section */}
       <ContactSection />
+
+      {/* 4.8 Footer */}
+      <Footer />
     </div>
   );
 }
