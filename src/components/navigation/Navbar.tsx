@@ -156,7 +156,7 @@ export default function Navbar() {
               href={`mailto:${PROFILE.contacts.email}`}
               className="w-full text-center py-2.5 rounded-xl bg-[#E52332] text-[#F7F4F0] text-xs font-semibold tracking-wide"
             >
-              Contact Directly ({PROFILE.contacts.email})
+              Contact Directly
             </a>
           </div>
         </div>

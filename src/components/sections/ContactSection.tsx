@@ -67,9 +67,9 @@ export default function ContactSection() {
               </span>
               <a
                 href={`mailto:${PROFILE.contacts.email}`}
-                className="text-base sm:text-lg font-semibold text-[#F7F4F0] hover:text-[#FF6A70] transition-colors break-all"
+                className="text-base sm:text-lg font-semibold text-[#F7F4F0] hover:text-[#FF6A70] transition-colors inline-block"
               >
-                {PROFILE.contacts.email}
+                Email Me
               </a>
             </div>
           </div>
@@ -82,31 +82,31 @@ export default function ContactSection() {
               </span>
               <span className="text-xs font-mono uppercase text-[#A5A2AC]">Professional Profiles</span>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="flex flex-col gap-2.5">
               <a
                 href={PROFILE.contacts.linkedin}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-2 rounded-lg bg-white/5 hover:bg-white/10 text-xs font-mono text-[#F7F4F0] transition-colors"
+                className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/15 text-xs font-mono text-[#F7F4F0] transition-all group"
               >
-                <span className="flex items-center gap-2">
-                  <LinkedinIcon className="w-4 h-4 text-[#0A66C2]" />
-                  <span>LinkedIn ({PROFILE.contacts.linkedinUser})</span>
+                <span className="flex items-center gap-2.5">
+                  <LinkedinIcon className="w-4 h-4 text-[#0A66C2] group-hover:scale-110 transition-transform" />
+                  <span className="font-semibold text-sm">LinkedIn</span>
                 </span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#A5A2AC]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#A5A2AC] group-hover:text-white transition-colors" />
               </a>
 
               <a
                 href={PROFILE.contacts.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-between p-2 rounded-lg bg-white/5 hover:bg-white/10 text-xs font-mono text-[#F7F4F0] transition-colors"
+                className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/15 text-xs font-mono text-[#F7F4F0] transition-all group"
               >
-                <span className="flex items-center gap-2">
-                  <GithubIcon className="w-4 h-4 text-white" />
-                  <span>GitHub ({PROFILE.contacts.githubUser})</span>
+                <span className="flex items-center gap-2.5">
+                  <GithubIcon className="w-4 h-4 text-white group-hover:scale-110 transition-transform" />
+                  <span className="font-semibold text-sm">GitHub</span>
                 </span>
-                <ArrowUpRight className="w-3.5 h-3.5 text-[#A5A2AC]" />
+                <ArrowUpRight className="w-3.5 h-3.5 text-[#A5A2AC] group-hover:text-white transition-colors" />
               </a>
             </div>
           </div>

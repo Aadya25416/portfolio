@@ -2,7 +2,7 @@
 
 import React from "react";
 import { OPEN_SOURCE_CONTRIBUTIONS } from "@/data/openSource";
-import { GitPullRequest, ExternalLink, GitMerge, ShieldCheck } from "lucide-react";
+import { ExternalLink, ShieldCheck } from "lucide-react";
 
 export default function OpenSourceSection() {
   return (
@@ -33,19 +33,26 @@ export default function OpenSourceSection() {
               className="group p-6 sm:p-8 rounded-2xl bg-[#111116] border border-white/10 hover:border-white/20 transition-all duration-300 flex flex-col justify-between"
             >
               <div>
-                {/* PR tag and status */}
+                {/* Repository header */}
                 <div className="flex items-center justify-between mb-4">
-                  <span className="flex items-center gap-1.5 text-xs font-mono text-[#10B981] px-2.5 py-1 rounded-full bg-[#10B981]/10 border border-[#10B981]/20">
-                    <GitMerge className="w-3.5 h-3.5" />
-                    <span>{item.type}</span>
-                  </span>
-                  <span className="text-[11px] font-mono text-[#A5A2AC]">
+                  <span className="text-xs font-mono text-[#A5A2AC]">
                     {item.repository}
                   </span>
                 </div>
 
                 <h3 className="text-xl font-bold text-[#F7F4F0] mb-3 group-hover:text-[#FF6A70] transition-colors">
-                  {item.project}
+                  {item.prUrl ? (
+                    <a
+                      href={item.prUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="hover:underline decoration-[#FF6A70] underline-offset-4"
+                    >
+                      {item.project}
+                    </a>
+                  ) : (
+                    item.project
+                  )}
                 </h3>
 
                 <p className="text-xs sm:text-sm text-[#A5A2AC] leading-relaxed mb-6 font-light">

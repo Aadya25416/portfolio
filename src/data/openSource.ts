@@ -4,7 +4,7 @@ export interface OpenSourceContribution {
   repository: string;
   description: string;
   prUrl?: string;
-  type: string;
+  type?: string;
   technologies: string[];
 }
 

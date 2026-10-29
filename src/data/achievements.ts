@@ -1,12 +1,13 @@
 export interface Achievement {
   id: string;
-  metric: string;
-  metricLabel: string;
+  metric?: string;
+  metricLabel?: string;
   title: string;
-  organization: string;
+  organization?: string;
   description: string;
   badge?: string;
   year?: string;
+  links?: { label: string; url: string }[];
 }
 
 export const ACHIEVEMENTS: Achievement[] = [
@@ -43,13 +44,13 @@ export const ACHIEVEMENTS: Achievement[] = [
   },
   {
     id: "codeforces",
-    metric: "300+",
-    metricLabel: "Problems Solved",
-    title: "Codeforces Competitive Programming",
-    organization: "Codeforces",
+    title: "Competitive Programming",
     description:
-      "Solved 300+ competitive programming problems and secured 5791th rank in Codeforces Round 1119 (Div. 3). Active handles: Aadya25 and Aadyaa432.",
-    badge: "CP",
+      "Solved 300+ competitive programming problems across platforms, including Codeforces.",
+    links: [
+      { label: "Codeforces Profile 1", url: "https://codeforces.com/profile/Aadya25" },
+      { label: "Codeforces Profile 2", url: "https://codeforces.com/profile/Aadyaa432" },
+    ],
   },
   {
     id: "jee-main",
