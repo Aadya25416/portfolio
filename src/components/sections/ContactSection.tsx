@@ -115,11 +115,10 @@ export default function ContactSection() {
         {/* Big Action CTA Button */}
         <div className="flex flex-wrap items-center justify-center gap-4">
           <a
-            href={`mailto:${PROFILE.contacts.email}?subject=Hello%20Aadya%20-%20Opportunity%20or%20Project`}
-            className="inline-flex items-center gap-2.5 px-8 py-4 rounded-full bg-[#E52332] hover:bg-[#ff3b4b] text-[#F7F4F0] text-sm font-semibold tracking-wide transition-all duration-200 shadow-[0_4px_24px_rgba(229,35,50,0.4)] hover:shadow-[0_6px_32px_rgba(229,35,50,0.6)] active:scale-95"
+            href={`mailto:${PROFILE.contacts.email}?subject=Hello%20Aadya`}
+            className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-[#E52332] hover:bg-[#ff3b4b] text-[#F7F4F0] text-sm font-semibold tracking-wide transition-all duration-200 shadow-[0_4px_24px_rgba(229,35,50,0.4)] hover:shadow-[0_6px_32px_rgba(229,35,50,0.6)] active:scale-95"
           >
-            <span>Say Hello Directly</span>
-            <ArrowUpRight className="w-4 h-4" />
+            <span>Say Hello Directly ↗</span>
           </a>
         </div>
 
