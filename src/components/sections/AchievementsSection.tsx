@@ -2,7 +2,7 @@
 
 import React from "react";
 import { ACHIEVEMENTS } from "@/data/achievements";
-import { Trophy, Award, Zap, BookOpen } from "lucide-react";
+import { Trophy } from "lucide-react";
 
 export default function AchievementsSection() {
   return (

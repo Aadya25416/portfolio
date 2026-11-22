@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { Mail, Copy, Check, ArrowUpRight, Phone, Send } from "lucide-react";
+import { Mail, Copy, Check, ArrowUpRight, Send } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import { PROFILE } from "@/data/profile";
 
@@ -66,7 +66,7 @@ export default function ContactSection() {
             </div>
             <div className="flex flex-col gap-2.5">
               <a
-                href="mailto:aadyaa257@gmail.com"
+                href={`mailto:${PROFILE.contacts.email}`}
                 className="flex items-center justify-between p-3 rounded-xl bg-white/5 hover:bg-white/10 border border-white/5 hover:border-white/15 text-xs font-mono text-[#F7F4F0] transition-all group"
               >
                 <span className="flex items-center gap-2.5">

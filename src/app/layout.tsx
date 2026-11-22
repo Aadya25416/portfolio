@@ -3,6 +3,7 @@ import { Inter, Dancing_Script, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navigation/Navbar";
 import CustomCursor from "@/components/ui/CustomCursor";
+import ExtensionErrorSuppressor from "@/components/ui/ExtensionErrorSuppressor";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -72,6 +73,7 @@ export default function RootLayout({
       className={`${inter.variable} ${dancingScript.variable} ${jetbrainsMono.variable} scroll-smooth`}
     >
       <body className="min-h-screen bg-[#111116] text-[#F7F4F0] font-sans antialiased selection:bg-[#E52332]/30 selection:text-[#F7F4F0] overflow-x-hidden">
+        <ExtensionErrorSuppressor />
         <CustomCursor />
         <Navbar />
         <main className="w-full flex flex-col">{children}</main>

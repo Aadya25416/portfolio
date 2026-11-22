@@ -1,9 +1,9 @@
 "use client";
 
 import React, { useState } from "react";
-import { ExternalLink, Sparkles, CheckCircle2, Layers } from "lucide-react";
+import { CheckCircle2, Layers } from "lucide-react";
 import { GithubIcon } from "@/components/ui/Icons";
-import { PROJECTS, type Project } from "@/data/projects";
+import { PROJECTS } from "@/data/projects";
 
 export default function ProjectsSection() {
   const [filter, setFilter] = useState<string>("All");
@@ -66,7 +66,7 @@ export default function ProjectsSection() {
                     {/* Index & Category tag */}
                     <div className="flex items-center gap-3 mb-4">
                       <span className="text-xs font-mono text-[#A5A2AC]">
-                        0{index + 1} //
+                        0{index + 1} {"//"}
                       </span>
                       <span className="text-xs font-mono px-2.5 py-0.5 rounded-full bg-white/5 border border-white/10 text-[#FF6A70]">
                         {project.category}

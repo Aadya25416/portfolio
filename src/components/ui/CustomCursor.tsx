@@ -16,7 +16,9 @@ export default function CustomCursor() {
       return;
     }
 
-    setIsEnabled(true);
+    const enableTimer = setTimeout(() => {
+      setIsEnabled(true);
+    }, 0);
 
     let mouseX = -100;
     let mouseY = -100;
@@ -77,6 +79,7 @@ export default function CustomCursor() {
     rafId = requestAnimationFrame(updateCursor);
 
     return () => {
+      clearTimeout(enableTimer);
       window.removeEventListener("mousemove", onMouseMove);
       document.removeEventListener("mouseleave", onMouseLeave);
       cancelAnimationFrame(rafId);

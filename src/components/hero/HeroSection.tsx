@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { ArrowDown, Code2, Sparkles, ExternalLink, Mail } from "lucide-react";
+import { ArrowDown, Code2, Sparkles } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "@/components/ui/Icons";
 import CharacterCanvas from "./CharacterCanvas";
 import { PROFILE } from "@/data/profile";

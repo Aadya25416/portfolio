@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { Terminal, Cpu, GitPullRequest, GraduationCap, MapPin, Award } from "lucide-react";
+import { Terminal, Cpu, GitPullRequest, GraduationCap, MapPin } from "lucide-react";
 import { PROFILE } from "@/data/profile";
 
 export default function AboutSection() {

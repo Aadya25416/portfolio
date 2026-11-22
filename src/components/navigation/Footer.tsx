@@ -51,7 +51,7 @@ export default function Footer() {
             <span className="text-white/15 hidden sm:inline">•</span>
 
             <a
-              href="mailto:aadyaa257@gmail.com"
+              href={`mailto:${PROFILE.contacts.email}`}
               className="flex items-center gap-1.5 hover:text-[#F7F4F0] transition-colors group"
               aria-label="Send email"
             >
